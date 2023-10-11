@@ -1,5 +1,4 @@
 
-
 function CountDigit(iNo)
 {
     let i=0;
@@ -22,6 +21,4 @@ function FirstNumber(iNo)
     return iNo;
 }
 
-
-
-console.log(FirstNumber(125))
+console.log(FirstNumber(123))
