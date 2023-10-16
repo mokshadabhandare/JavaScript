@@ -8,7 +8,7 @@ let obj={
 console.log(obj.name);
 
 //2
-let user=new Object();
+let user1=new Object();
 user={
     name:"Mokshada",
     age:21,
