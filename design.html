@@ -6,15 +6,20 @@
     <title>Document</title>
 </head>
 <body>
-    <img src="./download.jpeg" name="pic" height="200" width="200">
-    <img src="./photo.jpeg" name="pic2" height="200" width="200">
+    <img src="./download.jpeg" name="pic" id="flower1" class="photo1" height="200" width="200">
+    <img src="./photo.jpeg" name="pic2" id="flower2" class="photo2" height="200" width="200">
     <button onclick="show()">Change</button>
     <script>
         function show()
         {
-            pic.src="./photo.jpeg";
+            //window.document.image[0].src=""
+            //pic.src="./photo.jpeg"; --------reference as name
+           // document.getElementById("flower1").src="./photo.jpeg";
+              
+        
+            //pic2.src="./download.jpeg";
+            document.getElementById("flower1").src="./download.jpeg";
 
-            pic2.src="./download.jpeg";
         }
     </script>
 </body>
