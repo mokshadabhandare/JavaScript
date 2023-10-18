@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Enter your marks</label><br>
+    
+    <label>Marathi</label>
+    <input type="text" id="subject1" >
+
+    <br><label>Hindi</label>
+    <input type="text" id="subject2" >
+     
+    <br><label>English</label>
+    <input type="text" id="subject3" >
+     
+    <br><label>Science</label>
+    <input type="text" id="subject4" >
+     
+    <br><label>Math</label>
+    <input type="text" id="subject5" >
+
+    <button onclick="Result()">Result</button>
+    
+    <h3>Your Marks</h3>
+    <p id="para"></p>
+   
+    <script>
+       function Result()
+       {
+        let Marathi=document.getElementById("subject1").value;
+            let Hindi=document.getElementById("subject2").value;
+            let English=document.getElementById("subject3").value;
+            let Science=document.getElementById("subject4").value;
+            let Math=document.getElementById("subject5").value;
+
+           
+            document.getElementById("para").innerHTML=
+                     ` Marathi: ${subject1}<br>
+                      Hindi:${subject2}<br>
+                      English:${subject3}<br>
+                      Science:${subject4}
+                      Math:${subject5}`;
+
+            let total=subject1+subject2+subject3+subject4+subject5;
+            let Ans=(total/500)*100;
+            window.alert(total);
+
+            
+       }
+
+    </script>
+
+</body>
+</html>
