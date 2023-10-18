@@ -4,9 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="">
+    
 </head>
 <body>
-    
+    <h2>Password Validator</h2>
+    <form>
+
+        <label>Enter your name</label>
+        <input type="text" onkeyup="text()" id="username"><br>
+        <label>Enter Your Password</label><br>
+        <input type="password" id="pwd1"><br>
+        <label>Re-Enter Your Password</label><br>
+        <input type="password" onkeyup="validepassword()" id="pwd2"><br>
+        <button>Submit</button>
+
+        <h5 id="err"></h5>
+    </form>
+
+    <script>
+        function validepassword()
+        {
+            let username=document.getElementById("username").value;
+            let pwd1=document.getElementById("pwd1").value;
+            let pwd2=document.getElementById("pwd2").value;
+
+            if(pwd1.trim()==pwd2.trim())
+            {
+                 document.getElementById("err").innerHTML="Password Required";
+                 document.getElementById("err").style.color="green";
+            }
+            else{
+                
+                document.getElementById("err").innerHTML="Password not Matched";
+                 document.getElementById("err").style.color="red";
+            }
+        }
+          function text()
+          {
+            let username=document.getElementById("username").value;
+           username.toUppercase();
+          }
+        function submitForm()
+        {
+            let pwd1=document.getElementById("pwd1").value;
+            let pwd2=document.getElementById("pwd2").value;
+
+            alert(pwd1);
+            alert(pwd2);
+        }
+    </script>
 </body>
 </html>
