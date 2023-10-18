@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Enter your name</label>
+    <input type="text" id="user_name">
+
+    <label>email</label>
+    <input type="email" id="email">
+
+    <label>phone no</label>
+    <input type="tel" id="no">
+
+    <label>Enter your city</label>
+    <input type="text" id="city">
+
+    <button onclick="Display()">Submit</button>
+
+    <div>
+    <h3>Your Information</h3>
+    <p id="para"></p>
+    </div>
+
+    <script>
+        function Display()
+        {
+            let user_name=document.getElementById("user_name").value;
+            let email=document.getElementById("email").value;
+            let no=document.getElementById("no").value;
+            let city=document.getElementById("city").value;
+
+            document.getElementById("para").innerHTML=
+                     ` Name: ${user_name}<br>
+                      email:${email}<br>
+                      no:${no}<br>
+                      city:${city}
+ `           ;
+        }
+    </script>
+
+</body>
+</html>
