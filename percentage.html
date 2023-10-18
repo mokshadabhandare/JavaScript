@@ -6,6 +6,7 @@
     <title>Document</title>
 </head>
 <body>
+    <form>
     <label>Enter your marks</label><br>
     
     <label>Marathi</label>
@@ -22,7 +23,8 @@
      
     <br><label>Math</label>
     <input type="text" id="subject5" >
-
+    </form>
+    
     <button onclick="Result()">Result</button>
     
     <h3>Your Marks</h3>
@@ -39,18 +41,16 @@
 
            
             document.getElementById("para").innerHTML=
-                     ` Marathi: ${subject1}<br>
-                      Hindi:${subject2}<br>
-                      English:${subject3}<br>
-                      Science:${subject4}
-                      Math:${subject5}`;
+                     ` Marathi: ${Marathi}<br>
+                      Hindi:${Hindi}<br>
+                      English:${English}<br>
+                      Science:${Science}
+                      Math:${Math}`;
 
-            let total=subject1+subject2+subject3+subject4+subject5;
+            let total=parseInt(Marathi)+parseInt(Hindi)+parseInt(English)+parseInt(Science)+parseInt(Math);
             let Ans=(total/500)*100;
-            window.alert(total);
-
-            
-       }
+            window.alert(Ans);
+        }
 
     </script>
 
