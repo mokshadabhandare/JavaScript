@@ -7,12 +7,16 @@
 </head>
 <body>
     
+    <form>
+        
+        <label>Enter your fahrenheit</label>
+        <input type="text" id="fah">
 
 
-
-
-
-
+</form>
+<button onclick="fahrenheit()">Convert</button>
+<h3>Information</h3>
+<p id="p"></p>
 
     
 <script>
@@ -20,12 +24,14 @@
 
 function fahrenheit()
 {
-let C=(F-32)*5/9;
-return C;
-}
+    let fahrenheit=document.getElementById("fah").value;
 
-let C=fahrenheit(F);
-document.write("Converted fahrenheit into celsius","<br>"+C);
+    document.getElementById("p").innerHTML=
+    `fahrenheit:${fahrenheit}`;
+        let f=(fah-32);
+         let C=(f)*(5/9);
+          window.alert(C);
+}
 
 </script>
 
